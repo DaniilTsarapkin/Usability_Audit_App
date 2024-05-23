@@ -692,7 +692,7 @@ class UsabilityAuditApp:
         comment_value = comment_data[0] if comment_data is not None else ""
         self.comment_text_value = comment_value
         comment_label = ttk.Label(one_frame, text=f"Комментарий:\n{comment_value}", style='TLabel')
-        comment_label.grid(row=5, column=0, columnspan=2, pady=5, padx=10, sticky="e")
+        comment_label.grid(row=5, column=0, columnspan=5, pady=5, padx=10, sticky="w")
 
         select_template_button = ttk.Button(one_frame, text="Выбрать в качестве шаблона", command=open_create_window,
                                             style='TButton')
